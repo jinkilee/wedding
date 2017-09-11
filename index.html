@@ -148,24 +148,40 @@
 
 			</div>
 		</section>
-		  
-		<!-- Seven -->
-		<section class="wrapper style1 align-center">
-			<div class="inner medium" align=center>
-				<h3>예식장 찾아오시는 길</h3>
-				<p>서울서초구 강남대로 27 더포레 웨딩홀 (aT센터 5층) (02-6300-2300) </br>
-				2017년 9월9일 토요일 저녁5시 40분 </br>
-				</p>
-				<iframe src="http://map.naver.com/index.nhn?query=67O07YWM6rCA66eI7KeA7Jik&enc=b64&tab=1" width="auto" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-		</section>
+
+		<!--###########################################
+		<script>
+		function initMap() {
+			var mapOptions = {
+				center: new google.maps.LatLng(51.5, -0.12),
+				zoom: 10,
+				mapTypeId: google.maps.MapTypeId.HYBRID
+			}
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=initMap"></script>
+		##############################################-->
+		<div id="map" style="width:100%;height:350px;"></div>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2f7a399b0fea0f9f9564dac3107ebc95"></script>		
+		<script>
+			var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+			mapOption = { 
+				center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+				level: 3 // 지도의 확대 레벨
+			};
+
+			// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+			var map = new daum.maps.Map(mapContainer, mapOption);
+		</script>
 		  
 		<!-- Footer -->
 		<footer class="wrapper style1 align-center">
 			<div class="inner">
 				<p>Design credits: <a href="https://html5up.net">HTML5 UP</a>.</p>
 			</div>
-		</footer>  
+		</footer>
+		
     </div>
 
 	<!-- Scripts -->
