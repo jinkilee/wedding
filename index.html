@@ -1,182 +1,24 @@
-
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>이진기♥윤혜진 결혼합니다</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
-	<body>
+<head>
+    <meta charset="utf-8">
+    <title>지도 생성하기</title>
     
-	<!-- Wrapper -->
-	<div id="wrapper" class="divided">	
-		<!-- One -->
-		<section class="spotlight style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
-			<div class="content">
-				<h2>이진기♥윤혜진</h2>
-				<h3></h3>
-				<p class="major"><br>
-				2018년 1월 14일 일요일 오전 11시<br>
-				보테가마지오@서울숲역</p>
-				
-				<ul class="actions vertical">
-					<li><a href="#map" class="button big wide smooth-scroll-middle">오시는 길</a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<img src="images/img.13.jpg" alt="" />
-			</div>
-		</section>
-		  
-		<!-- Two -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-			<div class="content">
-				<h3>이필성, 이윤영의 장남 진기</h3>
-				<p>세심한 표현은 서툴고<br>
-				때로는 눈치가 있는<br>
-				그러나 항상 진실된 한 남자와
-				</p>
-			</div>
-			<div class="image" style="height: 600px">
-				<img src="images/img.17.jpg" alt="" />
-			</div>
-		</section>
-		  
-		<!-- Three -->
-		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-		<!--  <section class="spotlight style1 fullscreen onscroll-image-fade-in"> -->
-			<div class="content">
-				<h3>윤세열, 최은수의 차녀 혜진</h3>
-				<p>청순가련한 공주같지만<br>
-				때로는 똑부러지게 야무지고<br>
-				누구보다 한 사람을 사랑하는 여자가
-				</p>
-			</div>
-			<div class="image" style="height: 810px">
-				<img src="images/img.18.jpg" alt="" />
-			</div>
-		</section>
+</head>
+<body>
+<!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:100%;height:350px;"></div>
 
-		<!-- Four -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-			<div class="content" style="width:100%;height:780px;">
-				<p>한 걸음 한 걸음 서로에게 다가가</p>
-				<h3>평생을 함께 하려고 합니다.</h3>
-			</div>
-			<div class="image">
-				<img src="images/img.4.jpg" alt="" />
-			</div>
-		</section>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2f7a399b0fea0f9f9564dac3107ebc95"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new daum.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
 
-		<!-- Five -->
-		<section class="wrapper style1 align-center">
-			<div class="inner">
-				<!--<h3>연애 히스토리</h3>-->
-				<p>서로를 아끼고 존중하며<br>
-				   평생 사랑하며 살겠습니다♥</p>
-			</div>
-		
-			<!-- Gallery -->
-			<div class="gallery style2 medium lightbox onload-fade-in">
-				<article>
-					<a href="images/img.14.jpg" class="image">
-						<img src="images/img.14.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<!--<p>MENT0</p>-->
-						<ul class="actions">
-							<li><span class="button small">확대해서 보기</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/img.15.jpg" class="image">
-						<img src="images/img.15.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<!--<p>MENT1</p>-->
-						<ul class="actions">
-							<li><span class="button small">확대해서 보기</span></li>
-						</ul>
-					</div>
-				</article>
-				<article>
-					<a href="images/img.16.jpg" class="image">
-						<img src="images/img.16.jpg" alt="" />
-					</a>
-					<div class="caption">
-						<!--<p>MENT2</p>-->
-						<ul class="actions">
-							<li><span class="button small">확대해서 보기</span></li>
-						</ul>
-					</div>
-				</article>
-			</div>
-		</section>
-		
-		<!-- Six -->
-		<section class="wrapper style1 align-center">
-			<div class="inner">
-				<h3>신랑이 신부에게</h3>
-				<p>.....<br>
-				이쁜 말<br>
-				이쁜 말<br>
-				.....
-				</p>
-				<h3>신부가 신랑에게</h3>
-				<p>.....<br>
-				더 이쁜 말<br>
-				더 이쁜 말<br>
-				.....
-				</p>
-			</div>
-		</section>
-		
-		<!--<div class="inner">
-			지하철 분당선: 서울숲역 4번 출구 도보 5분 (약 350m)<br>
-			지하철 2호선: 뚝섬역 8번 출구 도보 12분 (약 750m)<br>
-		</div>-->
-	</div>
-	 
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2f7a399b0fea0f9f9564dac3107ebc95"></script>		
-	<script>
-		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
-		mapOption = { 
-			center: new daum.maps.LatLng(37.5458430,127.0425570), // 지도의 중심좌표
-			level: 3 // 지도의 확대 레벨
-		};
-
-		// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-		var map = new daum.maps.Map(mapContainer, mapOption);
-		// 마커가 표시될 위치입니다 
-		var markerPosition  = new daum.maps.LatLng(37.5458430,127.0425570); 
-
-		// 마커를 생성합니다
-		var marker = new daum.maps.Marker({
-			position: markerPosition
-		});
-
-		// 마커가 지도 위에 표시되도록 설정합니다
-		marker.setMap(map);
-	</script>
-	  
-	<!-- Footer -->
-	<footer class="wrapper style1 align-center">
-		<div class="inner">
-			<p>Design credits: <a href="https://html5up.net">HTML5 UP</a>.</p>
-		</div>
-	</footer>
-		
-   
-
-	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.scrollex.min.js"></script>
-	<script src="js/jquery.scrolly.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/util.js"></script>
-	<script src="js/main.js"></script>
-    
-  </body>
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+var map = new daum.maps.Map(mapContainer, mapOption); 
+</script>
+</body>
 </html>
